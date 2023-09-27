@@ -39,7 +39,7 @@ function Home() {
   const [shortDesc, setShortDesc] = useState([])
 
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://mymoviz-backend.vercel.app/movies')
       .then(response => response.json())
       .then(data => {
 
